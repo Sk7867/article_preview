@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Sk7867/article_preview)
+- Live Site URL: [Article Preview](https://sk7867.github.io/article_preview/index.html)
 
 ## My process
 
