@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+  --v-drk-blue: hsl(217, 19%, 35%);
+  --des-drk-blue: hsl(214, 17%, 51%);
+  --gry-blue: hsl(212, 23%, 69%);
+  --lght-gry-blue: hsl(210, 46%, 95%);
+  --font: 'Manrope', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--lght-gry-blue);
+}
+
+.container {
+  width: 327px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 50px auto 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  width: 327px;
+  height: 200px;
+  background-image: url(images/drawers.jpg);
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+}
+
+.heading {
+  color: var(--v-drk-blue);
+  font-family: var(--font);
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 35px 10px 12px;
+  width: 263px;
+}
+
+.description {
+  color: var(--des-drk-blue);
+  font-family: var(--font);
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  margin: 0 10px 20px;
+  width: 263px;
+}
+
+.user_info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 327px;
+  height: 64px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+}
+
+.user {
+  display: flex;
+}
+
+.name_date {
+  margin-left: 10px;
+}
+
+.name {
+  color: var(--gry-blue);
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  font-family: var(--font);
+}
+
+.date {
+  color: var(--gry-blue);
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  font-family: var(--font);
+}
+
+.user_img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  margin-left: 30px;
+}
+
+button {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: none;
+  color: rgb(226, 220, 220);
+  position: absolute;
+  right: 30px;
+}
+
+.svg-grey {
+  fill: var(--des-drk-blue);
+}
+
+.svg-white {
+  fill: #fff;
+}
+
+.svg-hover {
+  fill: #fff;
+}
+
+button:hover {
+  background-color: var(--des-drk-blue);
+  cursor: pointer;
+}
+
+.normal-back {
+  background-color: var(--gry-blue);
+}
+
+.select-back {
+  background-color: #6e8098;
+}
+
+.pop_up {
+  width: 327px;
+  height: 64px;
+  background-color: var(--v-drk-blue);
+  display: none;
+  position: absolute;
+  border-radius: 0 0 10px 10px;
+  justify-content: center;
+}
+
+.pop_social {
+  display: flex;
+}
+
+.text_share {
+  text-transform: uppercase;
+  font-family: var(--font);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding-top: 3px;
+}
+
+.pop_social img {
+  width: 20px;
+  height: 20px;
+}
+
+.soc_icon {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.soc_icon img {
+  margin-left: 15px;
+}
+
+.pop_square {
+  color: var(--gry-blue);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  transition: display 0.4s ease-in-out;
+}
+
+.none {
+  display: none;
+}
+
+.pop_square {
+  display: none;
+}
+
+.pop_square {
+  position: absolute;
+  background-color: var(--v-drk-blue);
+  width: 20px;
+  height: 20px;
+  bottom: -10px;
+  transform: rotate(45deg);
+}
+
+/* -------------------footer---------------------------- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: var(--font);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 730px;
+    height: 280px;
+  }
+
+  .img {
+    width: 285px;
+    height: 280px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .heading {
+    width: 365px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    margin: 35px auto 12px auto;
+  }
+
+  .content {
+    width: 445px;
+  }
+
+  .description {
+    width: 365px;
+    margin: 0 auto 20px auto;
+  }
+
+  .user_info {
+    width: 365px;
+    margin: 0 auto;
+    background-color: var(--whiteish);
+  }
+
+  button {
+    right: 3px;
+  }
+
+  .pop_square {
+    display: unset;
+  }
+
+  .pop_up {
+    width: 248px;
+    height: 55px;
+    border-radius: 15px;
+    justify-content: center;
+    right: -105px;
+    bottom: 70px;
+  }
+}
