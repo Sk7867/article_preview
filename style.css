@@ -113,7 +113,7 @@ body {
   margin-left: 30px;
 }
 
-button {
+.share_button {
   width: 32px;
   height: 32px;
   border-radius: 100%;
@@ -121,13 +121,23 @@ button {
   color: rgb(226, 220, 220);
   position: absolute;
   right: 30px;
+  transition: all 0.4s ease-in-out;
+}
+
+.share_button:hover {
+  background-color: var(--des-drk-blue);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--des-drk-blue);
 }
 
 .svg-grey {
   fill: var(--des-drk-blue);
 }
 
-.svg-white {
+.svg-grey .svg-white {
   fill: #fff;
 }
 
@@ -135,27 +145,21 @@ button {
   fill: #fff;
 }
 
-button:hover {
-  background-color: var(--des-drk-blue);
-  cursor: pointer;
-}
-
-.normal-back {
-  background-color: var(--gry-blue);
-}
-
-.select-back {
-  background-color: #6e8098;
-}
-
 .pop_up {
   width: 327px;
-  height: 64px;
+  height: 0;
   background-color: var(--v-drk-blue);
-  display: none;
+  display: flex;
   position: absolute;
   border-radius: 0 0 10px 10px;
   justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  height: 64px;
 }
 
 .pop_social {
@@ -195,10 +199,6 @@ button:hover {
   font-weight: 500;
   letter-spacing: 5px;
   transition: display 0.4s ease-in-out;
-}
-
-.none {
-  display: none;
 }
 
 .pop_square {
@@ -261,7 +261,7 @@ button:hover {
     background-color: var(--whiteish);
   }
 
-  button {
+  .share_button {
     right: 3px;
   }
 
